@@ -10,15 +10,13 @@ A lightweight API that issues and tracks “thank-you” credits for every ecosy
 
 ---
 
-## 🧩 Available Endpoints
+## 🧩 Author
+- YASH PATIL / yashyp12
 
-### ▶️ Enroll User
+ 
+}
 
-**POST** `/api/enroll`
 
-**Body JSON:**
-```json
-{
   "userId": "string",
   "actionType": "string",
 }
