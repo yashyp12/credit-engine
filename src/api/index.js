@@ -1,6 +1,6 @@
- 
+// File: api/index.js
 const express = require('express');
-const apiRoutes = require('../src/routes/apiRoutes'); // adjust path if needed
+const apiRoutes = require('../src/routes/apiRoutes');
 const app = express();
 
 app.use(express.json());
