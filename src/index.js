@@ -7,13 +7,16 @@ app.use(express.json());
 
 app.use('/api', apiRoutes);
 
-app.get('/api/enroll', (req, res) => {
-  res.send(' Use POST method to enroll a user. This endpoint does not support GET requests.');
+app.get('/', (req, res) => {
+  res.send('🚀 Credit Engine API is live. Use POST /api/enroll or GET /api/credits/:userId');
 });
 
+app.get('/api/enroll', (req, res) => {
+  res.send('📝 This endpoint only supports POST requests to enroll users.');
+});
 
-app.get('/', (req, res) => {
-  res.send('🚀 Credit Engine API is running. Use /api/enroll (POST) or /api/credits/:userId (GET)');
+app.get('/api/credits/:userId', (req, res) => {
+  res.send('🧾 This endpoint requires a valid userId in the URL to fetch credits.');
 });
 
 
