@@ -61,9 +61,9 @@ Install dependencies:
 
 # Install Modules
 npm install
-Start the server:
+ 
 
-#To Run - 
+# To Run - 
 npm start
 
 Server will run on:
@@ -74,10 +74,6 @@ http://localhost:3000
 Use POST to /api/enroll with raw JSON body (as above)
 
 Use GET to /api/credits/:userId
-
-⚠️ Notes
-This project uses in-memory storage, so data resets on every restart.
-
 
 👤 Author
 Name: Yash Patil 
