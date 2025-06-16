@@ -10,10 +10,6 @@ A lightweight API that issues and tracks “thank-you” credits for every ecosy
 
 ---
 
-
-
----
-
 ## 🧠 Logic Summary
 
 Credits =  
@@ -75,7 +71,8 @@ Use POST to /api/enroll with raw JSON body (as above)
 
 Use GET to /api/credits/:userId
 
-👤 Author
+
+# Author
 Name: Yash Patil 
 
 Email: patilyashyp12@gmail.com
