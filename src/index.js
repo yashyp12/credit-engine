@@ -8,8 +8,17 @@ app.use(express.json());
 app.use('/api', apiRoutes);
 
 app.get('/', (req, res) => {
-  res.send('Credit Engine API is live. Use POST /api/enroll or GET /api/credits/:userId');
+  res.send(`
+    <h2> Credit Engine API is Live!</h2>
+    <p>Use the following endpoints:</p>
+    <ul>
+      <li><strong>POST</strong> /api/enroll - Enroll a user and assign credits</li>
+      <li><strong>GET</strong> /api/credits/:userId - Get user credits</li>
+    </ul>
+    <p>Test using <a href="https://www.postman.com/">Postman</a> or any REST client.</p>
+  `);
 });
+
 
 app.get('/api/enroll', (req, res) => {
   res.send('This endpoint only supports POST requests to enroll users.');
