@@ -8,15 +8,15 @@ app.use(express.json());
 app.use('/api', apiRoutes);
 
 app.get('/', (req, res) => {
-  res.send('🚀 Credit Engine API is live. Use POST /api/enroll or GET /api/credits/:userId');
+  res.send('Credit Engine API is live. Use POST /api/enroll or GET /api/credits/:userId');
 });
 
 app.get('/api/enroll', (req, res) => {
-  res.send('📝 This endpoint only supports POST requests to enroll users.');
+  res.send('This endpoint only supports POST requests to enroll users.');
 });
 
 app.get('/api/credits/:userId', (req, res) => {
-  res.send('🧾 This endpoint requires a valid userId in the URL to fetch credits.');
+  res.send('This endpoint requires a valid userId in the URL to fetch credits.');
 });
 
 
