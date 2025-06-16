@@ -71,6 +71,22 @@ Use POST to /api/enroll with raw JSON body (as above)
 
 Use GET to /api/credits/:userId
 
+# Hosted Backend API: https://credit-engine-wfq5.onrender.com
+
+📌 Instructions:
+- Open the above link to check that the API is live.
+- To test endpoints, use tools like [Postman](https://www.postman.com/):
+  - POST `/api/enroll` with body:
+    ```json
+    {
+      "userId": "user123",
+      "actionType": "referral",
+      "referrerId": "ref123",
+      "spend": 200
+    }
+    ```
+  - GET `/api/credits/user123` to see total credits
+
 
 # Author
 Name: Yash Patil 
