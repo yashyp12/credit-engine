@@ -12,6 +12,11 @@ app.get('/api/enroll', (req, res) => {
 });
 
 
+app.get('/', (req, res) => {
+  res.send('🚀 Credit Engine API is running. Use /api/enroll (POST) or /api/credits/:userId (GET)');
+});
+
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
