@@ -51,7 +51,7 @@ GET /api/credits/user123
 Clone the repo:
 
  #Fork 
-git clone https://github.com/<your-username>/credit-engine.git
+git clone [https://github.com/<your-username>/credit-engine.git](https://github.com/yashyp12/credit-engine.git)
 cd credit-engine
 Install dependencies:
 
